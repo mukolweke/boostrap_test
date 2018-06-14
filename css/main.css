@@ -1,0 +1,22 @@
+.canvas{
+			margin-left: 50px;
+		}
+		#cy_canvas{
+         	margin-left: 120px;
+         	border:1px solid #000000;
+         }
+         .canvas, .svg{
+			width: 550px;
+			float: left;
+			height: 200px;
+		}
+		.cy_logo{
+			height: 50px;
+			width: 100px;
+			padding-left: 30px;
+			margin-top: 0px; 
+		}
+		.navbar{
+			background-color: #006666;
+			color: white;
+		}
