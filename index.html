@@ -4,47 +4,161 @@
 	<meta charset="utf-8">
 	<title>Bootstrap BASIC</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<style type="text/css">
-		.panel-form{
-			margin: 150px auto;
-			padding: 0 auto;
-			width: 600px;
-			border-radius: 10px;
+		.canvas{
+			margin-left: 50px;
 		}
-		.panel .head{
-			background-color: #006666;
+		#cy_canvas{
+         	margin-left: 120px;
+         	border:1px solid #000000;
+         }
+         .canvas, .svg{
+			width: 550px;
+			float: left;
+			height: 200px;
+		}
+		.cy_logo{
+			height: 50px;
+			width: 100px;
+			padding-left: 30px;
+			margin-top: 0px; 
+		}
+		.navbar{
+			background-color: #006666;color: white;
+		}
+		li{
+			margin-left: 30px;
+			float: left;
+		}
+		.nav_link{
+			text-decoration: none;
+			display: block;
+			padding: 16px;
+			text-align: center;
 			color: #fff;
+			transition: 0.9s
 		}
-		.form-body{
-			height: 180px;
+		li a:hover{
+			text-decoration: none;
+			display: block;
+			padding: 16px;
+			text-align: center;
+			color: #a4d55d;
+			transition: 0.9s
 		}
-		form{
-			margin-top: 20px;
-		}
-		.btn-success{
-			background-color: #006666;
-			border-color: #006666;
+		.navbar-default{
+			color: #fff;
 		}
 	</style>
 </head>
 <body>
-<div class="container">
-	<div class="panel panel-default panel-form">
-		<div class="panel-heading head"><h4>Cytonn Investments Weekly Email Reports</h4></div>
-		<div class="panel-body form-body">
-			<form class="form">
-				<div class="form-group">
-					<label>Enter email for subscription :</label>
-					<div class="input-group">
-						<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-						<input class="input form-control" type="email" placeholder="Email" name="Email"/>
+	<!-- bootstrap class
+	--navigation
+	--images
+	--form
+	--table
+	--buttons -->
+<div>
+	<embed class="cy_logo" type="image/svg+xml" src="src/cytonn_logo.svg" /></div>
+	<nav class="navbar navbar-inverse">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse">
+	      <ul class="nav navbar-nav">
+	        <li><a class="nav_link" href="#">Home</a></li>
+			<li><a href="#">Food Menu</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<section class="container">
+		<table class="table table-hover table-striped table-responsive table-bordered">
+			<th colspan="3"style="text-align: center;background-color: #a4d55d;">
+				Mama Milkas Kitchen
+			</th>
+			<tr class="hold">
+				<td>Day</td>
+				<td>Time</td>
+				<td>Delicacy</td>
+			</tr>
+			<tr>
+				<td>Monday</td>
+				<td>Lunch</td>
+				<td>Githeri</td>
+			</tr>
+			<tr class="hold">
+				<td>Tuesday</td>
+				<td>Lunch</td>
+				<td>Mokimo</td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td>Lunch</td>
+				<td>Ugali, Nyama</td>
+			</tr>
+			<tr class="hold">
+				<td>Thursday</td>
+				<td>Lunch</td>
+				<td>Fried Rice</td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td>Lunch</td>
+				<td>Chapo Madondo</td>
+			</tr>
+		</table>
+		<hr>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">Cytonn Email Subcscription</div>
+					<div class="panel-body" style="height: 200px;margin-top: 20px;">
+						<form class="form">
+							<div class="form-group">
+								<div class="alert alert-info">Enter email for subscription :</div>
+								<div class="input-group">
+									<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+									<input class="input form-control" type="email" placeholder="Email" name="Email"/>
+								</div>
+							</div>
+							<button class="btn btn-success btn-block" style="margin-top: 20px;"type="submit">SUBSCRIBE &nbsp;<span class="glyphicon glyphicon-saved"></span></button>
+						</form>
 					</div>
 				</div>
-				<button class="btn btn-success btn-block" type="submit">SUBSCRIBE &nbsp;<span class="glyphicon glyphicon-saved"></span></button>
-			</form>
-	</div>
-	</div>
-</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+				<div class="col-xs-6 col-md-6">
+				    <a href="#" class="thumbnail">
+				      <img class="image image-responsive" src="src/img1.jpeg" style="height: 250px;"alt="safaricom bob collimore">
+				    </a>
+				  </div>
+				  <div class="col-xs-6 col-md-6">
+				    <a href="#" class="thumbnail">
+				      <img class="image image-responsive" src="src/img2.png" style="height: 250px;"alt="safaricom bob collimore">
+				    </a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<nav class="navbar" style="height: 50px;margin-top: 40px;margin-bottom: 0px;">
+	  <div class="container">
+			<p class="text-center">molukaka@cytonn.com &nbsp;&nbsp;&copy;&nbsp;2018<p>
+	  </div>
+	</nav>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery3.3.1.js"></script>
 </body>
 </html>
